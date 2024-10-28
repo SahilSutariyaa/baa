@@ -1,0 +1,69 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 15px;
+    flex-wrap: wrap;
+    /* Allows items to wrap on smaller screens */
+}
+
+.firstContainer {
+    width: 60%;
+    color: aliceblue;
+}
+
+.firstContainer h2 {
+    padding-bottom: 10px;
+    color: aliceblue;
+}
+
+.secondContainer {
+    height: 120px;
+    width: 25%;
+    border-radius: 50%;
+    background-color: #DDF2E1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgContainer {
+    overflow: hidden;
+    object-fit: contain;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .firstContainer {
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+
+    .secondContainer {
+        width: 45%;
+        /* Adjust size of secondContainer */
+        height: 100px;
+        /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .mainContainer {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items */
+    }
+
+    .secondContainer {
+        width: 40%;
+        padding: 5px;
+        /* Wider secondContainer for mobile */
+        height: 100px;
+        /* Adjust height for mobile */
+    }
+}

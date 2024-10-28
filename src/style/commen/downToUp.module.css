@@ -1,0 +1,40 @@
+.container {
+    position: fixed;
+    z-index: 1;
+    background-color: transparent;
+    padding: 8px;
+    color: black;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    bottom: 10px;
+    right: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        height: 35px;
+        width: 35px;
+        font-size: 16px;
+        bottom: 5px;
+        right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
+        bottom: 5px;
+        /* Adjust position for very small screens */
+        right: 5px;
+        /* Adjust position for very small screens */
+    }
+}

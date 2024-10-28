@@ -1,0 +1,91 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: #003b3c;
+}
+
+.imageContainer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.textContainer {
+    text-align: center;
+    font-size: 20px;
+}
+
+.textContainer h1 {
+    color: #fff;
+}
+
+.textContainer h2 {
+    color: #fff;
+    margin: 7px 0;
+}
+
+.textContainer p {
+    color: #fff;
+    font-size: 17px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    float: left;
+}
+
+.btnContainer .btn1 {
+    padding: 10px 20px;
+    color: #003b3c;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 50px;
+    font-size: 18px;
+}
+
+.btnContainer .btn1:hover {
+    background-color: #e9bb55;
+    ;
+}
+
+.btnContainer .btn2 {
+    padding: 10px 20px;
+    color: #003b3c;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 50px;
+    font-size: 18px;
+    background-color: #e9bb55;
+}
+
+.btnContainer .btn2:hover {
+    background-color: #fff;
+    ;
+}
+
+@media (min-width: 768px) {
+    .mainContainer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .textContainer {
+        text-align: left;
+        max-width: 600px;
+    }
+
+    .imageContainer {
+        flex: 1;
+    }
+
+    .textContainer {
+        flex: 2;
+    }
+}

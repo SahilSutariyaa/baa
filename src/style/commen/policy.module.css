@@ -1,0 +1,206 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .mainTitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+  }
+  
+  .mainList {
+    padding-left: 0;
+    counter-reset: main-counter;
+    list-style-type: none;
+  }
+  
+  .listItem {
+    margin-bottom: 25px;
+    counter-increment: main-counter;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .listItem:hover {
+    transform: translateY(-3px);
+  }
+  
+  .listItem::before {
+    content: counter(main-counter);
+    font-weight: 700;
+    color: #fff;
+    background-color: #3498db;
+    padding: 2px 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .listItem p {
+    margin: 0;
+    display: inline;
+  }
+  
+  .subList {
+    margin-top: 15px;
+    padding-left: 20px;
+    list-style-type: none;
+    counter-reset: sub-counter;
+  }
+  
+  .subListItem {
+    margin-bottom: 12px;
+    counter-increment: sub-counter;
+    position: relative;
+    padding-left: 35px;
+  }
+  
+  .subListItem::before {
+    content: counter(sub-counter);
+    position: absolute;
+    left: 0;
+    font-weight: 600;
+    color: #3498db;
+  }
+  
+  .sectionTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-left: 4px solid #3498db;
+    padding-left: 15px;
+  }
+  
+  .subTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #34495e;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  
+  strong {
+    font-weight: 600;
+    color: #2980b9;
+  }
+  
+  .privacyItemList {
+    margin-bottom: 25px;
+    counter-increment: main-counter;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+  }
+  .privacyItem ul {
+    list-style: none;
+  }
+  
+  .privacyItemList:hover {
+    transform: translateY(-3px);
+  }
+  .privacyItemList {
+    padding: 35px;
+  }
+  
+  .privacyItemInner {
+    padding-left: 20px;
+    margin-left: 15px;
+  }
+  
+  .privacyItemList p {
+    margin: 0;
+    display: inline;
+    padding-left: 35px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px 15px;
+    }
+  
+    .mainTitle {
+      font-size: 28px;
+    }
+  
+    .listItem {
+      padding: 15px;
+    }
+  
+    .sectionTitle {
+      font-size: 22px;
+    }
+  
+    .subTitle {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px 10px;
+    }
+  
+    .mainTitle {
+      font-size: 24px;
+    }
+  
+    .listItem,
+    .privacyItemList {
+      padding: 12px;
+    }
+  
+    .sectionTitle {
+      font-size: 22px;
+    }
+  
+    .subTitle {
+      font-size: 18px;
+    }
+  
+    .listItem::before,
+    .privacyItemList::before {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .mainTitle {
+      font-size: 20px;
+    }
+  
+    .listItem,
+    .privacyItemList {
+      padding: 10px;
+    }
+  
+    .sectionTitle {
+      font-size: 20px;
+    }
+  
+    .subTitle {
+      font-size: 16px;
+    }
+  }

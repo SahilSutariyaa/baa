@@ -1,0 +1,150 @@
+.navbarContainer {
+    background-color: #003b3c;
+}
+
+.marquetry {
+    color: #fff;
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    /* Better spacing */
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    /* background: linear-gradient(to right, #808080, #d3d3d3); */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.listContainer {
+    flex: 1;
+    text-align: center;
+}
+
+.ulItems {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    font-family: "Madimi One", sans-serif;
+    cursor: pointer;
+}
+
+.ulItems li {
+    font-size: 18px;
+    color: #fff;
+    margin: 10px;
+}
+
+.ulItems li a {
+    text-decoration: none;
+}
+
+.ulItems li a:hover {
+    color: #f5b801;
+}
+
+.ulItems li:hover {
+    color: #f5b801;
+}
+
+.iconContainer {
+    color: #fff;
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.menuBar {
+    display: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+.number {
+    position: relative;
+    left: 50px;
+    bottom: 5px;
+    font-size: 15px;
+    color: red;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+@media screen and (max-width: 915px) {
+    .menuBar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        transition: all 400ms ease;
+    }
+
+    .ulItems {
+        position: absolute;
+        top: 140px;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: #016768;
+        flex-direction: column;
+        height: 0;
+        overflow: hidden;
+        transition: height 600ms ease;
+        padding: 0;
+        gap: 0;
+    }
+
+    .visible {
+        height: calc(107vh - 100px);
+    }
+
+    .ulItems li {
+        border-bottom: 1px solid #fefefe;
+    }
+
+    .ulItems li a {
+        display: inline-block;
+        padding: 16px;
+        width: 100%;
+    }
+
+    .ulItems li a:hover {
+        background-color: #998b8b;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .mainContainer {
+        padding: 10px;
+    }
+
+}

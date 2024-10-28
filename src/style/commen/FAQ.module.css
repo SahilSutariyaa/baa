@@ -1,0 +1,138 @@
+.faqContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .intro {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .faqList {
+    margin-bottom: 30px;
+  }
+  
+  .faqItem {
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .answer {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .outro {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .ctaSection {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .ctaButton {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .ctaButton:hover {
+    background-color: #555;
+  }
+  .container {
+    padding-block: 50px;
+    margin: 0 auto;
+    width: min(100% - 40px, 768px);
+    font: 16px / 1.5 sans-serif;
+  }
+  
+  .details {
+    --padding: 10px;
+    border: 1px solid #8d8d8d;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+  }
+  
+  .detailsTitle {
+    --width: 20px;
+    --height: 3px;
+    --radius: 1px;
+    --color: currentColor;
+    margin: 0;
+    padding: var(--padding) calc(var(--width) * 2) var(--padding) var(--padding);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+  }
+  
+  .detailsTitle:before,
+  .detailsTitle:after {
+    content: '';
+    display: block;
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--color);
+    position: absolute;
+    border-radius: var(--radius);
+    top: calc(50% - (var(--height) / 2));
+    right: calc(var(--width) / 2);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .detailsTitle:after {
+    transform: rotate(90deg);
+  }
+  
+  .detailsContainer[open] .detailsTitle:before {
+    transform: rotate(45deg);
+  }
+  
+  .detailsContainer[open] .detailsTitle:after {
+    transform: rotate(135deg);
+  }
+  
+  .detailsContainer[open] .detailsTitle {
+    background-color: #f3f3f3;
+  }
+  
+  .detailsDesc {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    padding-inline: var(--padding);
+    pointer-events: none;
+  }
+  
+  .detailsDesc.open {
+    grid-template-rows: 1fr;
+    padding-block: var(--padding);
+  }
+  
+  .detailsDescInner {
+    min-height: 0;
+  }
+  

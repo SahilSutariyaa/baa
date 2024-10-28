@@ -1,0 +1,166 @@
+/* ContactUs.module.css */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.containerSecond {
+    display: flex;
+    justify-content: center;
+    gap: 32px 64px;
+    padding: 32px;
+  }
+  
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 230px;
+  }
+  
+  .inner h4 {
+    font-size: 1.3rem;
+  }
+  
+  .inner p {
+    text-align: center;
+  }
+  
+  .inner i {
+    color: #009e4c;
+    font-size: 1.3rem;
+    border: 2px solid #009e4c;
+    padding: 24px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    font-size: 2.3rem;
+    justify-content: center;
+  }
+  
+  .inner i:hover {
+    background-color: #009e4c;
+    color: white;
+    transition: all 0.8s ease;
+  }
+  
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input, .textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+.textarea {
+    min-height: 100px;
+}
+
+.button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.errorInput {
+    border-color: red;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 16px;
+        max-width: 90%; 
+    }
+
+    .containerSecond {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .inner {
+        width: 100%; 
+    }
+
+    .inner h4 {
+        font-size: 1.2rem; 
+    }
+
+    .inner i {
+        font-size: 2rem; 
+        padding: 16px; 
+    }
+
+    .input, .textarea, .button {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        margin: 0 5px; 
+    }
+
+    .containerSecond {
+        padding: 16px 0; 
+    }
+
+    .inner {
+        width: 100%; 
+    }
+
+    .inner h4 {
+        font-size: 1rem; 
+    }
+
+    .inner i {
+        font-size: 1.8rem;
+        padding: 12px; 
+    }
+
+    .input, .textarea, .button {
+        font-size: 14px; 
+    }
+
+    .button {
+        padding: 8px; 
+    }
+}
