@@ -54,8 +54,8 @@ const DetailsPage = () => {
         return <div>Loading...</div>;
     }
     const handleClick = () => {
-        const phoneNumber = '918401143813'; // Replace with the actual phone number
-        const message = `i want to know about ${display.des}`; // Customize your message
+        const phoneNumber = '6355533088';
+        const message = `I want to know about :- ${display.des}`;
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
         window.open(url, '_blank');
